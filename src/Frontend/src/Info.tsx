@@ -26,7 +26,7 @@ function Info(){
         <>
             <h1>INFO</h1>
             <h2>ORIGINAL URL</h2>
-            <p>{urldata.originalURL}</p>
+            {/* <p>{urldata.originalURL}</p> */}
         </>
     )
 }
