@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./Frontend   # Path to your React project
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"  # Expose port 80 for the frontend
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./Backend   # Path to your .NET project
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"  # Expose port 80 for the .NET API
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
