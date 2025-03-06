@@ -61,7 +61,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 154,
+          "DockedWidth": 214,
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -142,8 +142,8 @@
               "Title": "Backend.http",
               "DocumentMoniker": "E:\\URLShortener\\src\\Backend\\Backend.http",
               "RelativeDocumentMoniker": "Backend.http",
-              "ToolTip": "E:\\URLShortener\\src\\Backend\\Backend.http*",
-              "RelativeToolTip": "Backend.http*",
+              "ToolTip": "E:\\URLShortener\\src\\Backend\\Backend.http",
+              "RelativeToolTip": "Backend.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2025-02-28T21:57:39.766Z",
@@ -188,7 +188,7 @@
           ]
         },
         {
-          "DockedWidth": 246,
+          "DockedWidth": 186,
           "SelectedChildIndex": 4,
           "Children": [
             {
