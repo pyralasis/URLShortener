@@ -16,8 +16,6 @@ services:
     build:
       context: ./Backend   # Path to your .NET project
       dockerfile: Dockerfile
-    ports:
-      - "8080:80"  # Expose port 80 for the .NET API
     networks:
       - app-network
 
