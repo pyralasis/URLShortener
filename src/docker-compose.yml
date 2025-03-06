@@ -16,6 +16,8 @@ services:
     build:
       context: ./Backend   # Path to your .NET project
       dockerfile: Dockerfile
+      volumes: 
+        - ./Backend/URLs.db:/app/URLs.db
     networks:
       - app-network
 
