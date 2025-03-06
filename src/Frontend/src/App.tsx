@@ -28,7 +28,7 @@ function App() {
     let response1 = await fetch('0.0.0.0:8080/shortener/availableurls');
     console.log(response1);
 
-    let response = await fetch('0.0.0.0:8080/shortener/shortenurl/',
+    let response = await fetch('0.0.0.0:8080/shortener/shortenurl',
       {
         method: "POST",
         body: JSON.stringify({"url": inputValue})
