@@ -2,12 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import { BrowserRouter, Route, Routes } from 'react-router'
+import { HashRouter, Route, Routes } from 'react-router'
 import Info from './Info.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/:url?" element={<App />}></Route>
         <Route path='/info/:url?' element={<Info />}></Route>
@@ -17,7 +17,7 @@ createRoot(document.getElementById('root')!).render(
       </Routes>
       
       
-    </BrowserRouter>
+    </HashRouter>
     
   </StrictMode>,
 )
