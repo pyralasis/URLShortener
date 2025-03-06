@@ -6783,11 +6783,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quazl\\Documents\\URLShortener\\src\\Backend\\Backend.csproj",
+      "projectUniqueName": "E:\\URLShortener\\src\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\quazl\\Documents\\URLShortener\\src\\Backend\\Backend.csproj",
+      "projectPath": "E:\\URLShortener\\src\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\quazl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quazl\\Documents\\URLShortener\\src\\Backend\\obj\\",
+      "outputPath": "E:\\URLShortener\\src\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
