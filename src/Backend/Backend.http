@@ -6,7 +6,6 @@ GET {{Backend_HostAddress}}/shortener/availableurls
 
 POST {{Backend_HostAddress}}/shortener/shortenurl
 Content-Type: application/json
-
 {
   "url": "https://google.com"
 }
