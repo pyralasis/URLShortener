@@ -28,7 +28,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf  # Mount the nginx.conf file here
     networks:
-      - app_network
+      - app-network
 
 networks:
   app-network:
