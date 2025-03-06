@@ -10,14 +10,9 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path='/info/:url?' element={<Info />}></Route>
-        <Route path="/:url?" element={<App />}></Route>
-
-        
-
+        <Route path='/go/:url?' element={<Info />}></Route>
+        <Route path="/" element={<App />}></Route>
       </Routes>
-      
-      
     </BrowserRouter>
-    
   </StrictMode>,
 )
