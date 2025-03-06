@@ -3,7 +3,7 @@ import { useParams } from 'react-router'
 
 function App() {
   let a = async (url: string) => {
-    let response = await fetch('https://localhost:7243/shortener/' + url)
+    let response = await fetch('http://backend:8080/shortener/' + url)
     // .then(response => response.json())
     // .then(data => console.log(data))
     // .catch(error => console.error(error));
