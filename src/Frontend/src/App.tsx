@@ -25,7 +25,7 @@ function App() {
   };
   
   let submitURL = async () => {
-    let response = await fetch('http://backend:8080/shortener/shortenurl/',
+    let response = await fetch('0.0.0.0:8080/shortener/shortenurl/',
       {
         method: "POST",
         body: JSON.stringify({"url": inputValue})
