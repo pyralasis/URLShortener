@@ -6,7 +6,7 @@ services:
       context: ./Frontend   # Path to your React project
       dockerfile: Dockerfile
     ports:
-      - "3000:3000"  # Expose port 80 for the frontend
+      - "80:80"  # Expose port 80 for the frontend
     depends_on:
       - backend
     networks:
@@ -17,16 +17,7 @@ services:
       context: ./Backend   # Path to your .NET project
       dockerfile: Dockerfile
     ports:
-      - "5000:80"  # Expose port 80 for the .NET API
-    networks:
-      - app-network
-  
-  nginx:
-    image: nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf  # Mount the nginx.conf file here
+      - "8080:80"  # Expose port 80 for the .NET API
     networks:
       - app-network
 
