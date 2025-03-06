@@ -25,10 +25,10 @@ function App() {
   };
   
   let submitURL = async () => {
-    let response1 = await fetch('0.0.0.0:8080/shortener/availableurls');
+    let response1 = await fetch('/shortener/availableurls');
     console.log(response1);
 
-    let response = await fetch('0.0.0.0:8080/shortener/shortenurl',
+    let response = await fetch('/shortener/shortenurl',
       {
         method: "POST",
         headers: {"Content-Type": "application/json"},
