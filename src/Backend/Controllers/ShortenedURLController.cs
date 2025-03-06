@@ -40,9 +40,10 @@ public class ShortenedURLController : ControllerBase
 
     // POST: shortener/shortenurl
     // Shortens a full URL
-    [HttpPut("shortenurl")]
+    [HttpPost("shortenurl")]
     public async Task<ActionResult<ShortenedURL>> PostShortenURL(FullURL fullURL)
     {
+        Console.WriteLine(fullURL);
         var shortenedURL = ShortenerService.ShortenURL(fullURL.URL);
         _context.ShortenedURLs.Add(shortenedURL);
         await _context.SaveChangesAsync();
