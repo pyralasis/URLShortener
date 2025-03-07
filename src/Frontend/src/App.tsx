@@ -36,7 +36,7 @@ function App() {
       }
     )
     .then(response => response.json())
-    .then(data => {console.log(data); window.location.replace(new URL("http://short.pyralasis.com/info/" + data.url));})
+    .then(data => {console.log(data); window.location.replace(new URL("http://short.pyralasis.com/info/" + data.shortURLId));})
     .catch(error => console.error(error));
     
     return response;
