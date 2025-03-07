@@ -34,10 +34,14 @@ function App() {
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({"url": inputValue})
       }
-    );
-    console.log(response)
-    let navigate = useNavigate();
-    navigate("/info/")
+    )
+    .then(response => response.json())
+    .then(data => {console.log(data); window.location.replace(new URL("http://short.pyralasis.com/info/" + data.url));})
+    .catch(error => console.error(error));
+    
+    // console.log(response)
+    // let navigate = useNavigate();
+    // navigate("/info/")
   };
   
   return (
