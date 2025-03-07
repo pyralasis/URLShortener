@@ -1,6 +1,6 @@
 import { SetStateAction, useState } from 'react';
 import './App.css'
-import { useNavigate, useParams } from 'react-router'
+import { useParams } from 'react-router'
 
 function App() {
   let a = async (url: string) => {
@@ -39,7 +39,7 @@ function App() {
     .then(data => {console.log(data); window.location.replace(new URL("http://short.pyralasis.com/info/" + data.url));})
     .catch(error => console.error(error));
     
-    // console.log(response)
+    return response;
     // let navigate = useNavigate();
     // navigate("/info/")
   };
